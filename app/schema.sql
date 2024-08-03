@@ -1,4 +1,4 @@
--- 最初に`DROP TABLE IF EXISTS`を実行することで、後の`CREATE TABLE`文が問題なく実行されることが保証される。
+-- 最初に`DROP TABLE IF EXISTS`を実行することで`CREATE TABLE`文が問題なく実行されることが保証される
 DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS post;
 
