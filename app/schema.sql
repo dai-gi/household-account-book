@@ -1,11 +1,11 @@
--- 最初に`DROP TABLE IF EXISTS`を実行することで`CREATE TABLE`文が問題なく実行されることが保証される
 DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS post;
 
 CREATE TABLE user (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   username TEXT UNIQUE NOT NULL,
-  password TEXT NOT NULL
+  password TEXT NOT NULL,
+  email TEXT UNIQUE NOT NULL
 );
 
 CREATE TABLE post (
