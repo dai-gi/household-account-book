@@ -40,5 +40,10 @@ def create_app(test_config=None):
     # 認証機能のブループリントをアプリに登録する
     from . import auth
     app.register_blueprint(auth.bp)
+
+    # ブログ機能をのブループリントをアプリに登録する
+    from . import blog
+    app.register_blueprint(blog.bp)
+    app.add_url_rule('/', endpoint='index')
     
     return app
